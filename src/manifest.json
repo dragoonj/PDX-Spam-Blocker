@@ -10,7 +10,7 @@
     {
       "matches": ["*://www.puzzledragonx.com/*"],
       "run_at" : "document_end",
-      "js": ["jquery-2.1.4.js","content.js"]
+      "js": ["jquery-2.1.4.min.js","content.js"]
     }
   ],
   "manifest_version": 2
