@@ -1,0 +1,17 @@
+{
+  "name": "PDX Spam Blocker",
+  "description": "Blocks spam commenters on PuzzleDragonX.com. Right-click the commenter's name and select 'Block this spammer'.",
+  "version": "1.0",
+  "permissions": ["contextMenus","storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.puzzledragonx.com/*"],
+      "run_at" : "document_end",
+      "js": ["jquery-2.1.4.js","content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
